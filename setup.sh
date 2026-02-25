@@ -13,3 +13,12 @@ fi
 
 mkdir -p files/src
 vcs import files/src < dependency_repos.repos
+
+if ! command -v docker &> /dev/null; then
+  echo "Error: 'docker' not found. Please install Docker."
+  exit 1
+fi
+
+echo ""
+echo "Building Docker image..."
+docker compose build
