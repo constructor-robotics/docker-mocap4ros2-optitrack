@@ -7,7 +7,7 @@ echo "  vcs import files/src < dependency_repos.repos   Run vcs manually"
 echo ""
 
 if ! command -v vcs &> /dev/null; then
-  echo "Error: 'vcs' not found. Install with: pip install vcstool"
+  echo "Error: 'vcs' not found. Install with: apt install vcstool"
   exit 1
 fi
 
