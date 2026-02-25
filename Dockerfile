@@ -17,7 +17,12 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -q -y --no-
 	net-tools \
     && rm -rf /var/lib/apt/lists/*
 
+# Additional ROS2 packages
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -q -y --no-install-recommends \
+    ros-jazzy-qt-gui \
+    ros-jazzy-qt-gui-cpp \
+    ros-jazzy-rqt-gui \
+    ros-jazzy-rqt-gui-cpp \
     ros-jazzy-rviz2 \
     && rm -rf /var/lib/apt/lists/*
 
