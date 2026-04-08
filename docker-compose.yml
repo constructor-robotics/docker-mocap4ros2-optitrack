@@ -35,4 +35,3 @@ services:
       - ./dds_profiles:/dds_profiles:ro
     stdin_open: true
     tty: true
-    command: bash
